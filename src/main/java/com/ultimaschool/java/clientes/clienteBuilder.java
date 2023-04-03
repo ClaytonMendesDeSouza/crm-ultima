@@ -96,7 +96,7 @@ public class clienteBuilder {
         }
     }
 
-    // Geter e seters
+    // Geter == guardar e seters == alterar
 
     public String getPrimeiroNome() {
         return primeiroNome;
@@ -104,7 +104,7 @@ public class clienteBuilder {
 
     public void setPrimeiroNome(String primeiroNome) {
         this.primeiroNome = primeiroNome;
-    }
+    }// ele ñ retorna nada
 
     public String getNomeDoMeio() {
         return nomeDoMeio;
@@ -193,10 +193,10 @@ public class clienteBuilder {
 
         if (getGenero() == 'F')
         {
-            return "Sra";
+            return "Sra. ";
         } else if (getGenero() == 'M')
         {
-            return "Sr";
+            return "Sr. ";
         }
         else
         {
@@ -207,12 +207,12 @@ public class clienteBuilder {
 
 
     public String toString() {
-        return "clienteBuilder{" +
-                "primeiroNome = '" + primeiroNome + '\'' +
+        return tratamentoGenero() + "" +
+                "primeiroNome = '"  + primeiroNome + '\'' +
                 ", nomeDoMeio = '" + nomeDoMeio + '\'' +
                 ", sobrenome = '" + sobrenome + '\'' +
                 ", nomeCompleto = '" + nomeCompleto + '\'' +
-                ", cpf='" + cpf + '\'' +
+                ", cpf ='" + cpf + '\'' +
                 ", dataDeNacimento = '" + dataDeNacimento + '\'' +
                 ", idadeAtual = " + idadeAtual +
                 ", genero = " + genero +
@@ -222,10 +222,10 @@ public class clienteBuilder {
 
     public String toStringComIdentificacao() {
         return "Os dados de  identificação são: {" +
-                "primeiroNome = '" + primeiroNome + '\'' +
-                ", nomeDoMeio = '" + nomeDoMeio + '\'' +
-                ", sobrenome = '" + sobrenome + '\'' +
-                ", nomeCompleto = '" + nomeCompleto + '\'' +
+                "primeiroNome =  '" + primeiroNome + '\'' +
+                ", nomeDoMeio =  '" + nomeDoMeio + '\'' +
+                ", sobrenome =  '" + sobrenome + '\'' +
+                ", nomeCompleto =  '" + nomeCompleto + '\'' +
                 ", cpf='" + cpf + '\'' +
                 ", dataDeNacimento = '" + dataDeNacimento + '\'' +
                 ", idadeAtual = " + idadeAtual +
